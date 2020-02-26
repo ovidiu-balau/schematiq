@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save schematiq
+npm install --save schemak
 ```
 
 ## Future plans
