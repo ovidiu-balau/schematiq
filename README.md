@@ -1,8 +1,8 @@
-# schematiq
+# schemak
 
 > Generate Formik forms from schemas
 
-[![NPM](https://img.shields.io/npm/v/schematiq.svg)](https://www.npmjs.com/package/schematiq) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/schemak.svg)](https://www.npmjs.com/package/schemak) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
