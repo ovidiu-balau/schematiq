@@ -1,17 +1,32 @@
-/**
- * Default CSS definition for typescript,
- * will be overridden with file-specific definitions by rollup
- */
-declare module '*.css' {
-  const content: { [className: string]: string };
-  export default content;
+import { FormikValues, FormikHelpers } from "formik";
+
+export interface ItemField {
+  name: string;
+  required?: boolean;
+  label: string;
+  component?: string;
+  options?: FieldOptions[];
+  placeholder?: string;
+  type?: string;
+  object?: Object;
+  className?: string;
 }
 
-interface SvgrComponent extends React.StatelessComponent<React.SVGAttributes<SVGElement>> {}
+interface FieldOptions {
+  label?: string;
+  value?: any;
+}
 
-declare module '*.svg' {
-  const svgUrl: string;
-  const svgComponent: SvgrComponent;
-  export default svgUrl;
-  export { svgComponent as ReactComponent }
+export interface SchematiqComponent {
+  formTitle?: string;
+  handleSubmit: (
+    values: Object,
+    actions: FormikHelpers<T>
+  ) => void | Promise<any>;
+  initialValues?: Object;
+  validateOnChange?: boolean;
+  validateOnBlur?: boolean;
+  fields: Array<ItemField>;
+  submitLabel?: string;
+  validationSchema?: Object;
 }

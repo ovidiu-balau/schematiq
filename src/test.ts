@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import Schematiq from "./index";
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe("Schematiq", () => {
+  it("is truthy", () => {
+    expect(Schematiq).toBeTruthy();
+  });
+});

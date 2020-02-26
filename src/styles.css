@@ -1,8 +1,71 @@
-/* add css styles here (optional) */
+.schematiq__label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.schematiq__itemWrapper {
+  margin-bottom: 25px;
+}
+
+.schematiq__itemWrapper label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.schematiq__itemWrapper input,
+.schematiq__itemWrapper select {
+  padding: 0.5rem;
+  font-size: 16px;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.schematiq__itemWrapper input[type="checkbox"] {
+  padding: 0;
+  margin: 0;
+}
+
+.schematiq__card {
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.schematiq__error {
+  display: block;
+  margin-top: 10px;
+  color: #d4380d;
+}
+
+.schematiq__button {
+  margin: 20px 0;
+  display: block;
+  padding: 8px 16px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #ccc;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.schematiq__button.schematiq__remove {
+  background-color: #d4380d;
+}
+
+.schematiq__button.schematiq__submit {
+  background-color: #007bff;
+}
+
+.schematiq__counter {
+  font-size: 0.7em;
+  margin-bottom: 10px;
+  margin-top: -10px;
 }
